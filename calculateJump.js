@@ -1,6 +1,6 @@
 const gravityFactors = require('./gravityFactors.js');
 
-function calculateJump(earthJumpHeight, gravityFactors) {
+function calculateJump(earthJumpHeight) {
     let jumpHeights = {};
     for (let planet in gravityFactors) {
         jumpHeights[planet] = parseFloat((earthJumpHeight * gravityFactors[planet]).toFixed(2));
@@ -8,4 +8,4 @@ function calculateJump(earthJumpHeight, gravityFactors) {
     return jumpHeights;
 }
 
-global.exports = calculateJump;
+global.calculateJump = calculateJump;
