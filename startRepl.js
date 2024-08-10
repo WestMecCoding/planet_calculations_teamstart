@@ -11,7 +11,7 @@ const repl = require('repl');
 const fs = require('fs');
 const path = require('path');
 
-const scripts = ['./calculateJump.js', './calculateWeight.js'];
+const scripts = ['./calculateJump.js', './calculateWeight2.js'];
 
 const loadFunctions = () => {
     scripts.forEach(script => {
